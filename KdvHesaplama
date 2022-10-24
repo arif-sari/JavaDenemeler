@@ -1,0 +1,32 @@
+package KdvHesaplama;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+
+		double price, vat, vat8, vatRate8=0.08, vatRate  = 0.18, totalPrice;
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Lütfen Tutar giriniz : ");
+
+		price = input.nextDouble();
+		vat8 = price*vatRate8;
+		vat = price*vatRate;
+		double total8 	= price + vat8 ;
+		double total    = price + vat;
+	 
+			
+		vat = (price < 1000)? vatRate:vatRate8;
+		vatRate =(price<1000)? vat: vat8;
+		totalPrice = (price<1000)? total: total8;
+		
+			
+		System.out.println("Kdv'siz tutar : "+ price );
+		System.out.println("Kdv tutarı : " + vatRate );
+		System.out.println("Kdv oranı : " + vat );
+		System.out.println("Toplam fiyat : " + totalPrice);
+
+
+	}
+
+}
