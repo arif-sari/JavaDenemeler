@@ -1,0 +1,39 @@
+package daireDilimAlan;
+import java.util.Scanner; // veri girişi yapılacağı için Scanner eklenir
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		//veri türleri
+		int r;
+		double  pi=3.14 , alpha , alan, cevre, dilim;
+		
+		//ilk girdimizi isteyelim
+		System.out.print("Dairenin yarıçapını girin : ");
+		r= input.nextInt(); //(r girilen veri olarak kullanılacaktır)
+		
+		// ikinci girdimizi isteyelim
+		System.out.print("Daire dilim açısını giriniz : ");
+		
+		alpha = input.nextInt(); //(alpha girilen veri olarak kullanılacaktır)
+
+		//formuller
+		cevre = 2* pi *r ;
+		alan =	pi*r*r;
+		dilim = (pi*(r*r)*alpha/360 );
+		
+		//çıktılar
+		System.out.println("Dairenin alanı :"+ cevre);
+		System.out.println("Dairenin alanı :" + alan);
+		System.out.println ("Dairenin dilim alanı :" + dilim);
+
+
+
+
+
+	}
+
+}
