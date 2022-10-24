@@ -1,0 +1,50 @@
+package manavKasaProgram;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//veri girişini aktif hale getirelim
+		Scanner input= new Scanner(System.in);
+		//veri türleri
+		double armut=2.14, elma=3.67, domates=1.11, muz=0.95 , patlican=5.00, kg, toplam;
+		
+
+		//girilecek verileri isteyelim
+		System.out.print("Ne kadar armut istersiniz :");
+		kg = input.nextDouble();
+		System.out.println(armut +" kg armut elma eklendi");
+		toplam = kg*armut;
+		
+		System.out.print("Ne kadar elma istersiniz :");
+		kg = input.nextDouble();
+		System.out.println(elma +" kg Elma eklendi");
+		toplam += kg*elma;
+		
+		System.out.print("Ne kadar domates istersiniz :");
+		kg = input.nextDouble();
+		System.out.println(domates +" kg domates eklendi");
+		toplam += kg*domates;
+		
+		System.out.print("Ne kadar muz istersiniz :");
+		kg = input.nextDouble();
+		System.out.println(muz +" kg muz eklendi");
+		toplam += kg*muz;
+		
+		System.out.print("Ne kadar patlıcan istersiniz :");
+		kg = input.nextDouble();
+		System.out.println(patlican +" kg patlıcan eklendi");
+		toplam += kg*patlican;
+			
+		System.out.println("Toplam tutar : " + (float)toplam + " TL'dir");
+		
+	}
+
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
