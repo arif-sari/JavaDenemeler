@@ -1,0 +1,50 @@
+package java101;
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		//değişkenleri oluşturma
+		int mat, fizik, kimya, turkce, tarih, muzik;
+
+		//Scanner sınıfımızı tanımladık
+		Scanner avg = new Scanner(System.in);
+
+		// kullanıcıdan değerleri al 
+		System.out.print("Matematik notunuz : ");
+		mat = avg.nextInt();
+		System.out.println(mat);
+
+		System.out.print("Fizik notunuzu girin : ");
+		fizik = avg.nextInt();
+		System.out.println(fizik);
+
+		System.out.print("Kimya notunuzu girin : ");
+		kimya = avg.nextInt();
+		System.out.println(kimya);
+
+		System.out.print("Türkçe notunuzu girin : ");
+		turkce = avg.nextInt();
+		System.out.println(kimya);
+
+		System.out.print("Tarih notunuzu girin : ");
+		tarih = avg.nextInt();
+		System.out.println(tarih);
+
+		System.out.print("Muzik notunuzu girin : ");
+		muzik =avg.nextInt();
+		System.out.println(muzik);
+
+		int toplam= (mat+fizik+kimya+turkce+tarih+muzik);
+		double sonuc = toplam/6;
+		System.out.println("Not ortalamanız :" + sonuc);
+		
+		String durum = sonuc>= 70? "Sınıfı geçtiniz": "Sınıfı geçemediniz" ;
+		System.out.println(durum);
+		
+		
+}
+
+}
