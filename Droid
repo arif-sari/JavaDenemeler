@@ -1,0 +1,59 @@
+class Droid{
+  //instance variables
+  String name;
+  int batteryLevel;
+
+//constructor
+public Droid(String droidName){
+  name = droidName;
+  batteryLevel =100;
+}
+
+//methods
+public void performTask(String task){
+System.out.println(name + "is performing task:  "+ task );
+batteryLevel = batteryLevel - 10;
+} 
+
+public void batteryLevel(){
+
+}
+
+public void displayBatteryLevel(){
+
+}
+
+public String toString(){
+  return "Hello, I’m the droid: " + name ;
+}
+
+public void energyReport(){
+    System.out.println("my battery level is: " + batteryLevel);
+}
+
+//Main
+  public static void main(String[] args){
+
+    Droid codey = new Droid("Codey");
+    System.out.println(codey);
+    System.out.println(codey.batteryLevel);
+    codey.performTask("dancing");
+    System.out.println(codey.batteryLevel);
+    codey.performTask("cooking");
+    System.out.println(codey.batteryLevel);
+    codey.performTask("playing");
+    System.out.println(codey.batteryLevel);
+
+
+    Droid d1 = new Droid("first  droid");
+    System.out.println(d1);
+    d1.energyReport();
+    d1.performTask("Learning java");
+    d1.energyReport();
+    d1.performTask("Learning java");
+    d1.energyReport();
+
+
+
+     }
+}
