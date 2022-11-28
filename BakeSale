@@ -1,0 +1,18 @@
+public class BakeSale {
+
+	public static void main(String[] args) {
+
+		int numCookies = 17;
+		int numCupcakes = 12;
+
+		numCupcakes += 8; // we baked 8 more cupcakes, total 20
+		numCookies -= 3; // A customer comes and buys 3 cookies.
+		numCookies /= 2; // Another customer buys half of the remaining cookies.
+
+		// Add your code above
+
+		System.out.println("Total number of Cookies : " + numCookies);
+		System.out.println("Total number of Cupcakes : " + numCupcakes);
+	}
+
+}
